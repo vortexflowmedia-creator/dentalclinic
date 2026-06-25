@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmileCare Dental services — Teeth cleaning, dental implants, teeth whitening, root canal, orthodontics, and emergency dentistry.">
+  <title>Our Services | SmileCare Dental</title>
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader-spinner"></div></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 2 4 4 4 8c0 2.5 1.5 4.5 3 6 .5.5 1 1 1 1.5L9 22h6l1-6.5c0-.5.5-1 1-1.5 1.5-1.5 3-3.5 3-6 0-4-4-6-8-6z"/><path d="M8 6c2-1 4-1 6 0"/></svg></span>
+        <span class="text-gradient">Smile</span>Care
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-orbe"></div>
+    <div class="page-orbe"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Services</span>
+      </div>
+      <h1 class="reveal">Our Dental Services</h1>
+      <p class="reveal">Comprehensive, personalized dental care — from routine cleanings to advanced restorative procedures.</p>
+    </div>
+  </section>
+
+  <!-- Services Detail -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Teeth Cleaning -->
+      <div class="service-detail reveal" id="cleaning">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#0ea5e9,#0284c7);">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><use href="icons/sprite.svg#icon-tooth-clean"/></svg>
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag" style="margin-bottom:8px;">01</span>
+          <h2>Professional Teeth Cleaning</h2>
+          <p>Our professional dental cleaning removes plaque, tartar, and surface stains that regular brushing can't reach. We use ultrasonic scalers and gentle polishing techniques for a deep clean without discomfort.</p>
+          <ul class="service-detail-list">
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Comprehensive plaque and tartar removal</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Professional fluoride treatment</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Gum health assessment and screening</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Oral hygiene education and tips</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Dental Implants -->
+      <div class="service-detail reveal" id="implants">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#14b8a6,#0d9488);">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><use href="icons/sprite.svg#icon-tooth-implant"/></svg>
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag" style="margin-bottom:8px;">02</span>
+          <h2>Dental Implants</h2>
+          <p>Our dental implant procedure uses titanium posts that fuse naturally with your jawbone, providing a permanent foundation for replacement teeth that look, feel, and function exactly like natural teeth.</p>
+          <ul class="service-detail-list">
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Single and multi-tooth implants</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> All-on-4 full arch reconstruction</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Computer-guided implant placement</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Lifetime durability with proper care</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Teeth Whitening -->
+      <div class="service-detail reveal" id="whitening">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#f59e0b,#d97706);">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><use href="icons/sprite.svg#icon-tooth-whiten"/></svg>
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag" style="margin-bottom:8px;">03</span>
+          <h2>Teeth Whitening</h2>
+          <p>Our in-office whitening treatment uses pharmaceutical-grade bleaching agents activated by advanced LED technology to dramatically brighten your smile — up to 8 shades lighter in a single visit.</p>
+          <ul class="service-detail-list">
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Safe, enamel-protecting formula</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Results visible after one session</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Custom take-home kits available</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Long-lasting results with proper care</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Root Canal -->
+      <div class="service-detail reveal" id="root-canal">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#a855f7,#9333ea);">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><use href="icons/sprite.svg#icon-tooth-root"/></svg>
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag" style="margin-bottom:8px;">04</span>
+          <h2>Root Canal Treatment</h2>
+          <p>Our gentle root canal therapy removes infected pulp tissue, relieves pain, and saves your natural tooth. Using advanced rotary instruments and digital imaging, we make the procedure quick and comfortable.</p>
+          <ul class="service-detail-list">
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Pain-free with modern anesthesia</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Digital imaging for precision</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Same-day emergency treatment available</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Preserves natural tooth structure</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Orthodontics -->
+      <div class="service-detail reveal" id="orthodontics">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#f43f5e,#e11d48);">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><use href="icons/sprite.svg#icon-tooth-braces"/></svg>
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag" style="margin-bottom:8px;">05</span>
+          <h2>Orthodontics</h2>
+          <p>We offer a full range of orthodontic solutions including traditional braces and clear aligner therapy (Invisalign). Our customized treatment plans straighten teeth efficiently while maintaining your natural smile.</p>
+          <ul class="service-detail-list">
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Invisalign clear aligners</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Traditional and ceramic braces</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Early intervention for children</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Adult orthodontic solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Emergency -->
+      <div class="service-detail reveal" id="emergency">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#06b6d4,#0891b2);">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><use href="icons/sprite.svg#icon-emergency"/></svg>
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag" style="margin-bottom:8px;">06</span>
+          <h2>Emergency Dentistry</h2>
+          <p>Dental emergencies don't wait, and neither should you. We reserve same-day appointments for urgent cases including severe toothaches, broken teeth, knocked-out teeth, and infections.</p>
+          <ul class="service-detail-list">
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Same-day emergency appointments</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> After-hours availability</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Comprehensive emergency exam</li>
+            <li><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-check"/></svg> Pain management and treatment</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-orbe"></div>
+    <div class="cta-orbe" style="width:400px;height:400px;bottom:-150px;right:-100px;top:auto;left:auto;"></div>
+    <div class="container reveal">
+      <h2>Need a Consultation?</h2>
+      <p>Our team is ready to discuss your dental needs and create a personalized treatment plan.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Book Appointment <svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-arrow-right"/></svg></a>
+        <a href="tel:+15551234567" class="btn btn-outline-light">
+          <svg width="16" height="16" viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-phone"/></svg>
+          +1 (555) 123-4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light">
+            <span class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 2 4 4 4 8c0 2.5 1.5 4.5 3 6 .5.5 1 1 1 1.5L9 22h6l1-6.5c0-.5.5-1 1-1.5 1.5-1.5 3-3.5 3-6 0-4-4-6-8-6z"/><path d="M8 6c2-1 4-1 6 0"/></svg></span>
+            <span class="text-gradient">Smile</span>Care
+          </a>
+          <p>Your perfect smile starts here. Experience premium dental care in a comfortable, modern environment.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-facebook"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-twitter"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-instagram"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-linkedin"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#cleaning">Teeth Cleaning</a></li>
+            <li><a href="services.html#implants">Dental Implants</a></li>
+            <li><a href="services.html#whitening">Teeth Whitening</a></li>
+            <li><a href="services.html#root-canal">Root Canal</a></li>
+            <li><a href="services.html#orthodontics">Orthodontics</a></li>
+            <li><a href="services.html#emergency">Emergency Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for dental tips, offers, and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+            <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-send"/></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> SmileCare Dental. All rights reserved.</p>
+        <p>Made with <span class="heart">&hearts;</span> for your smile</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-chevron-up"/></svg></button>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

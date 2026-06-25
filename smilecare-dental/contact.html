@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact SmileCare Dental — Book an appointment, find our address, or call us. We're here for your smile.">
+  <title>Contact Us | SmileCare Dental</title>
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader-spinner"></div></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 2 4 4 4 8c0 2.5 1.5 4.5 3 6 .5.5 1 1 1 1.5L9 22h6l1-6.5c0-.5.5-1 1-1.5 1.5-1.5 3-3.5 3-6 0-4-4-6-8-6z"/><path d="M8 6c2-1 4-1 6 0"/></svg></span>
+        <span class="text-gradient">Smile</span>Care
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-orbe"></div>
+    <div class="page-orbe"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+      <h1 class="reveal">Get in Touch</h1>
+      <p class="reveal">Ready to transform your smile? Book an appointment or reach out with any questions. We're here for you.</p>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <div class="contact-form-wrap">
+            <h3 style="font-size:1.25rem;font-weight:700;color:var(--color-white);margin-bottom:24px;">Send Us a Message</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <input type="text" placeholder="First Name" required class="input input-dark">
+                <input type="text" placeholder="Last Name" required class="input input-dark">
+              </div>
+              <input type="email" placeholder="Email Address" required class="input input-dark">
+              <input type="tel" placeholder="Phone Number" class="input input-dark">
+              <select class="select input-dark" style="color:rgba(255,255,255,0.6);">
+                <option value="" disabled selected>Select Service</option>
+                <option>Teeth Cleaning</option>
+                <option>Dental Implants</option>
+                <option>Teeth Whitening</option>
+                <option>Root Canal</option>
+                <option>Orthodontics</option>
+                <option>Emergency</option>
+                <option>General Checkup</option>
+              </select>
+              <textarea rows="4" placeholder="Your Message" required class="textarea input-dark"></textarea>
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+                <svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-send"/></svg>
+              </button>
+            </form>
+            <div class="form-success" id="formSuccess">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <h3>Message Sent!</h3>
+              <p>We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-map-pin"/></svg></div>
+              <div>
+                <h4>Our Address</h4>
+                <p>123 Health Avenue, Suite 200<br>New York, NY 10001</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-phone"/></svg></div>
+              <div>
+                <h4>Phone Number</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-mail"/></svg></div>
+              <div>
+                <h4>Email Address</h4>
+                <p>hello@smilecaredental.com</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-clock"/></svg></div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Mon – Fri: 8:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 3:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-map-placeholder" style="margin-top:16px;">
+            <svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-map-pin"/></svg>
+            <span>Interactive map loads here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light">
+            <span class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 2 4 4 4 8c0 2.5 1.5 4.5 3 6 .5.5 1 1 1 1.5L9 22h6l1-6.5c0-.5.5-1 1-1.5 1.5-1.5 3-3.5 3-6 0-4-4-6-8-6z"/><path d="M8 6c2-1 4-1 6 0"/></svg></span>
+            <span class="text-gradient">Smile</span>Care
+          </a>
+          <p>Your perfect smile starts here. Experience premium dental care in a comfortable, modern environment.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-facebook"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-twitter"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-instagram"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-linkedin"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#cleaning">Teeth Cleaning</a></li>
+            <li><a href="services.html#implants">Dental Implants</a></li>
+            <li><a href="services.html#whitening">Teeth Whitening</a></li>
+            <li><a href="services.html#root-canal">Root Canal</a></li>
+            <li><a href="services.html#orthodontics">Orthodontics</a></li>
+            <li><a href="services.html#emergency">Emergency Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for dental tips, offers, and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+            <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-send"/></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> SmileCare Dental. All rights reserved.</p>
+        <p>Made with <span class="heart">&hearts;</span> for your smile</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><svg viewBox="0 0 24 24"><use href="icons/sprite.svg#icon-chevron-up"/></svg></button>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
