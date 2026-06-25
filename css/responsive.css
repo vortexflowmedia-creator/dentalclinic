@@ -508,16 +508,9 @@
   }
 }
 
-/* --- Logo spacing fix (compact SmileCare) --- */
+/* --- Logo spacing fix --- */
 .logo {
   white-space: nowrap;
-}
-.logo-text {
-  letter-spacing: -0.06em;
-}
-.logo-text .text-gradient {
-  margin-right: -0.1em;
-  letter-spacing: 0;
 }
 
 /* --- Services section compact on home --- */
