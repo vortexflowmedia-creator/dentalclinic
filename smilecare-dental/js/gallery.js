@@ -35,8 +35,14 @@
     var data = getItemData(index);
 
     if (lightboxImage) {
+      var img = items[index].querySelector('img');
+      var src = img ? img.getAttribute('src') : '';
       lightboxImage.style.background = data.color;
-      lightboxImage.innerHTML = '<span style="font-size:4rem;font-weight:800;color:rgba(255,255,255,0.15);font-family:Playfair Display,serif;">' + data.number + '</span>';
+      if (src) {
+        lightboxImage.innerHTML = '<img src="' + src + '" alt="' + data.title + '" style="width:100%;height:100%;object-fit:contain;">';
+      } else {
+        lightboxImage.innerHTML = '<span style="font-size:4rem;font-weight:800;color:rgba(255,255,255,0.15);font-family:Playfair Display,serif;">' + data.number + '</span>';
+      }
     }
 
     if (lightboxTitle) lightboxTitle.textContent = data.title;
