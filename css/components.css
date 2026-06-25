@@ -708,23 +708,19 @@
 
 .gallery-item-image {
   aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
 .gallery-item-image .number {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: var(--text-5xl);
   font-weight: 800;
   color: rgba(255,255,255,0.15);
   font-family: var(--font-display);
   transition: transform var(--transition-slow);
-  z-index: 2;
-  pointer-events: none;
 }
 
 .gallery-item:hover .number {
@@ -742,17 +738,6 @@
   opacity: 0;
   transform: translateY(20px);
   transition: all var(--transition-base);
-  z-index: 3;
-  pointer-events: none;
-}
-
-.gallery-item-image img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
 }
 
 .gallery-item:hover .gallery-item-overlay {
