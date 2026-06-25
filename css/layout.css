@@ -697,12 +697,16 @@
 }
 
 .contact-map-placeholder {
-  position: relative;
-  overflow: hidden;
-  aspect-ratio: 3/1;
-  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-10);
   border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.35);
+  font-size: var(--text-sm);
 }
 
 .contact-map-placeholder svg {
@@ -875,40 +879,40 @@
   }
 }
 
-/* ===== SCROLL TO TOP ===== */
-.scroll-top {
+/* ===== WHATSAPP FLOATING BUTTON ===== */
+.whatsapp-btn {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
+  bottom: 24px;
+  right: 24px;
   z-index: 100;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: var(--radius-full);
-  background: linear-gradient(135deg, var(--color-primary-500), var(--color-accent-500));
+  background: #25D366;
   color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-glow);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(20px);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
   transition: all var(--transition-base);
+  text-decoration: none;
+  animation: whatsapp-pulse 2s ease-in-out infinite;
 }
 
-.scroll-top.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+.whatsapp-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55);
 }
 
-.scroll-top:hover {
-  transform: scale(1.1);
+.whatsapp-btn svg {
+  width: 28px;
+  height: 28px;
 }
 
-.scroll-top svg {
-  width: 20px;
-  height: 20px;
+@keyframes whatsapp-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
 /* ===== TESTIMONIALS CAROUSEL ===== */

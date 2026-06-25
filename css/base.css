@@ -35,6 +35,12 @@ svg,
 video {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+/* --- Responsive Images --- */
+img {
+  object-fit: cover;
 }
 
 .team-card-image img,
