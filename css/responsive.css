@@ -28,7 +28,7 @@
   .gallery-item:hover .gallery-item-image img,
   .service-detail:hover .service-detail-visual img,
   .ba-card:hover,
-  .whatsapp-btn:hover {
+  .whatsapp-widget:hover {
     transform: none !important;
   }
 
@@ -451,16 +451,16 @@
     padding: var(--space-4) 0;
   }
 
-  .whatsapp-btn {
+  .whatsapp-widget {
     bottom: 16px;
     right: 16px;
     width: 52px;
     height: 52px;
   }
 
-  .whatsapp-btn svg {
-    width: 24px;
-    height: 24px;
+  .whatsapp-widget svg {
+    width: 52px;
+    height: 52px;
   }
 
 
