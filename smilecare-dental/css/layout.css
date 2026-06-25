@@ -697,16 +697,12 @@
 }
 
 .contact-map-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  padding: var(--space-10);
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/1;
+  margin-top: 16px;
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.35);
-  font-size: var(--text-sm);
 }
 
 .contact-map-placeholder svg {
