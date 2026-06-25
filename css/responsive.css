@@ -510,11 +510,13 @@
 
 /* --- Logo spacing fix (compact SmileCare) --- */
 .logo {
-  letter-spacing: -0.03em;
   white-space: nowrap;
 }
-.logo .text-gradient {
-  margin-right: -0.06em;
+.logo-text {
+  letter-spacing: -0.06em;
+}
+.logo-text .text-gradient {
+  margin-right: -0.1em;
   letter-spacing: 0;
 }
 
