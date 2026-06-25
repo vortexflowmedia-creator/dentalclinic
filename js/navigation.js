@@ -8,13 +8,10 @@
   const navbar = document.getElementById('navbar');
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
-  const scrollBtn = document.getElementById('scrollTop');
-
   /* --- Scroll effects --- */
   function onScroll() {
     const y = window.scrollY;
     navbar && navbar.classList.toggle('scrolled', y > 60);
-    scrollBtn && scrollBtn.classList.toggle('show', y > 500);
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -43,11 +40,6 @@
       }
     });
   })();
-
-  /* --- Scroll-to-top --- */
-  scrollBtn && scrollBtn.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
 
   /* --- Smooth anchor scroll for same-page links --- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
